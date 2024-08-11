@@ -34,7 +34,7 @@ sudo apt install docker.io -y
 ```bash
 git clone https://github.com/SerrySingh/apache-docker.git
 cd httpd-docker
-sudo docker build -d -t my-apache-image .
+sudo docker build -t my-apache-image .
 ```
 # View Docker Images
 
@@ -48,7 +48,7 @@ sudo docker images
 
 To run the Apache Docker container, execute the following command in your terminal:
 ```bash
-sudo docker run -p 6000:80 my-apache-image
+sudo docker run -d -p 6000:80 my-apache-image
 ```
 
 # Jenkins Configure excute shell commands 
